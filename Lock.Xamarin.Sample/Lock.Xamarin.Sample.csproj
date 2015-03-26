@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{A18A1A7A-A8CE-45CD-B709-E6EE81D3C3F6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Lock.Xamarin.Sample</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>Lock.Xamarin.Sample</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>true</MtouchProfiling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>true</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="MainStoryboard.storyboard" />
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ActiveDirectoryViewController.xib">
+      <Link>Resources\A0ActiveDirectoryViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ChangePasswordViewController.xib">
+      <Link>Resources\A0ChangePasswordViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0DatabaseLoginViewController.xib">
+      <Link>Resources\A0DatabaseLoginViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0EnterpriseLoginViewController.xib">
+      <Link>Resources\A0EnterpriseLoginViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0FullActiveDirectoryViewController.xib">
+      <Link>Resources\A0FullActiveDirectoryViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0FullLoginViewController.xib">
+      <Link>Resources\A0FullLoginViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0LoadingViewController.xib">
+      <Link>Resources\A0LoadingViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0LockSignUpViewController.xib">
+      <Link>Resources\A0LockSignUpViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0LockViewController.xib">
+      <Link>Resources\A0LockViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ServiceCollectionViewCell.xib">
+      <Link>Resources\A0ServiceCollectionViewCell.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ServiceTableViewCell.xib">
+      <Link>Resources\A0ServiceTableViewCell.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0SignUpViewController.xib">
+      <Link>Resources\A0SignUpViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0SocialLoginViewController.xib">
+      <Link>Resources\A0SocialLoginViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0TitleView.xib">
+      <Link>Resources\A0TitleView.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0WebViewController.xib">
+      <Link>Resources\A0WebViewController.xib</Link>
+    </InterfaceDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Lock.Xamarin.SampleViewController.cs" />
+    <Compile Include="Lock.Xamarin.SampleViewController.designer.cs">
+      <DependentUpon>Lock.Xamarin.SampleViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\Auth0.bundle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\Services.plist">
+      <Link>Resources\Auth0.bundle\Services.plist</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\close.png">
+      <Link>Resources\Auth0.bundle\close.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\close%402x.png">
+      <Link>Resources\Auth0.bundle\close%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\close%403x.png">
+      <Link>Resources\Auth0.bundle\close%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\lock.png">
+      <Link>Resources\Auth0.bundle\lock.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\lock%402x.png">
+      <Link>Resources\Auth0.bundle\lock%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\lock%403x.png">
+      <Link>Resources\Auth0.bundle\lock%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\mail.png">
+      <Link>Resources\Auth0.bundle\mail.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\mail%402x.png">
+      <Link>Resources\Auth0.bundle\mail%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\mail%403x.png">
+      <Link>Resources\Auth0.bundle\mail%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\people.png">
+      <Link>Resources\Auth0.bundle\people.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\people%402x.png">
+      <Link>Resources\Auth0.bundle\people%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\people%403x.png">
+      <Link>Resources\Auth0.bundle\people%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\person.png">
+      <Link>Resources\Auth0.bundle\person.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\person%402x.png">
+      <Link>Resources\Auth0.bundle\person%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\person%403x.png">
+      <Link>Resources\Auth0.bundle\person%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_highlighted.png">
+      <Link>Resources\Auth0.bundle\secondary_button_highlighted.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_highlighted%402x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_highlighted%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_highlighted%403x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_highlighted%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_normal.png">
+      <Link>Resources\Auth0.bundle\secondary_button_normal.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_normal%402x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_normal%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_normal%403x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_normal%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\z-social.ttf">
+      <Link>Resources\Auth0.bundle\z-social.ttf</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lock.Xamarin\Lock.Xamarin.iOS.csproj">
+      <Project>{C6DC6098-43E5-4E00-984A-C6095FE07BFA}</Project>
+      <Name>Lock.Xamarin.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
