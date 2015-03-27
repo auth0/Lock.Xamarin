@@ -22,14 +22,14 @@ namespace Lock.Xamarin.Sample
 		}
 
 		public override void FinishedLaunching(UIApplication application) {
-			var authenticator = A0IdentityProviderAuthenticator.SharedInstance ();
-			var facebook = A0FacebookAuthenticator.NewAuthenticatorWithDefaultPermissions();
+			var authenticator = A0IdentityProviderAuthenticator.SharedInstance;
+			var facebook = A0FacebookAuthenticator.NewAuthenticatorWithDefaultPermissions ();
 			authenticator.RegisterAuthenticationProviders (new [] { facebook });
 		}
 
 
 		public override Boolean OpenUrl (UIApplication application, Foundation.NSUrl url, string sourceApplication, Foundation.NSObject annotation) {
-			return A0IdentityProviderAuthenticator.SharedInstance ().HandleURL (url, sourceApplication);
+			return A0IdentityProviderAuthenticator.SharedInstance.HandleURL (url, sourceApplication);
 		}
 	}
 }

@@ -1,13 +1,16 @@
 ﻿using System;
+using ObjCRuntime;
 
 namespace Auth0 {
 
+	[Native]
 	public enum A0StrategyType : ulong /* nuint */ {
 		Social = 0,
 		Database,
 		Enterprise
 	}
 
+	[Native]
 	public enum A0ErrorCode : long /* nint */ {
 		AuthenticationFailed = 0,
 		InvalidCredentials,
@@ -31,8 +34,10 @@ namespace Auth0 {
 		GooglePlusCancelled
 	}
 
+	[Native]
 	public enum A0ContainerLayoutVertical : long /* nint */ {
 		Center = 0,
 		Fill
 	}
 }
+

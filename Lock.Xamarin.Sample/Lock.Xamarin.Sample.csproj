@@ -98,49 +98,73 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     <InterfaceDefinition Include="MainStoryboard.storyboard" />
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ActiveDirectoryViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\SMS\A0CountryCodeTableViewCell.xib">
+      <Link>Resources\A0CountryCodeTableViewCell.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\SMS\A0CountryCodeTableViewController.xib">
+      <Link>Resources\A0CountryCodeTableViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\SMS\A0SMSCodeViewController.xib">
+      <Link>Resources\A0SMSCodeViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\SMS\A0SMSLockViewController.xib">
+      <Link>Resources\A0SMSLockViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\SMS\A0SMSSendCodeViewController.xib">
+      <Link>Resources\A0SMSSendCodeViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\TouchID\A0TouchIDLockViewController.xib">
+      <Link>Resources\A0TouchIDLockViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\TouchID\A0TouchIDRegisterViewController.xib">
+      <Link>Resources\A0TouchIDRegisterViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\TouchID\A0TouchIDSignUpViewController.xib">
+      <Link>Resources\A0TouchIDSignUpViewController.xib</Link>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0ActiveDirectoryViewController.xib">
       <Link>Resources\A0ActiveDirectoryViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ChangePasswordViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0ChangePasswordViewController.xib">
       <Link>Resources\A0ChangePasswordViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0DatabaseLoginViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0DatabaseLoginViewController.xib">
       <Link>Resources\A0DatabaseLoginViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0EnterpriseLoginViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0EnterpriseLoginViewController.xib">
       <Link>Resources\A0EnterpriseLoginViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0FullActiveDirectoryViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0FullActiveDirectoryViewController.xib">
       <Link>Resources\A0FullActiveDirectoryViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0FullLoginViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0FullLoginViewController.xib">
       <Link>Resources\A0FullLoginViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0LoadingViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0LoadingViewController.xib">
       <Link>Resources\A0LoadingViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0LockSignUpViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0LockSignUpViewController.xib">
       <Link>Resources\A0LockSignUpViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0LockViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0LockViewController.xib">
       <Link>Resources\A0LockViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ServiceCollectionViewCell.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0ServiceCollectionViewCell.xib">
       <Link>Resources\A0ServiceCollectionViewCell.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0ServiceTableViewCell.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0ServiceTableViewCell.xib">
       <Link>Resources\A0ServiceTableViewCell.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0SignUpViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0SignUpViewController.xib">
       <Link>Resources\A0SignUpViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0SocialLoginViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0SocialLoginViewController.xib">
       <Link>Resources\A0SocialLoginViewController.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0TitleView.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0TitleView.xib">
       <Link>Resources\A0TitleView.xib</Link>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\A0WebViewController.xib">
+    <InterfaceDefinition Include="..\Lock.Xamarin\Nibs\UI\A0WebViewController.xib">
       <Link>Resources\A0WebViewController.xib</Link>
     </InterfaceDefinition>
   </ItemGroup>
@@ -159,6 +183,8 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\Auth0.bundle\" />
+    <Folder Include="Resources\Auth0.SMS.bundle\" />
+    <Folder Include="Resources\Auth0.TouchID.bundle\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\Services.plist">
@@ -229,6 +255,36 @@
     </BundleResource>
     <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\z-social.ttf">
       <Link>Resources\Auth0.bundle\z-social.ttf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.SMS.bundle\CountryCodes.plist">
+      <Link>Resources\Auth0.SMS.bundle\CountryCodes.plist</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.SMS.bundle\cellphone.png">
+      <Link>Resources\Auth0.SMS.bundle\cellphone.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.SMS.bundle\cellphone%402x.png">
+      <Link>Resources\Auth0.SMS.bundle\cellphone%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.SMS.bundle\cellphone%403x.png">
+      <Link>Resources\Auth0.SMS.bundle\cellphone%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.TouchID.bundle\touchid.png">
+      <Link>Resources\Auth0.TouchID.bundle\touchid.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.TouchID.bundle\touchid%402x.png">
+      <Link>Resources\Auth0.TouchID.bundle\touchid%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.TouchID.bundle\touchid%403x.png">
+      <Link>Resources\Auth0.TouchID.bundle\touchid%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.TouchID.bundle\touchid_selected.png">
+      <Link>Resources\Auth0.TouchID.bundle\touchid_selected.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.TouchID.bundle\touchid_selected%402x.png">
+      <Link>Resources\Auth0.TouchID.bundle\touchid_selected%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.TouchID.bundle\touchid_selected%403x.png">
+      <Link>Resources\Auth0.TouchID.bundle\touchid_selected%403x.png</Link>
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
