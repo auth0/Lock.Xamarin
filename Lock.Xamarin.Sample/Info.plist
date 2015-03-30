@@ -45,7 +45,7 @@
 			<string>facebook</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb507756515938786</string>
+				<string>fb515369438565638</string>
 			</array>
 		</dict>
 		<dict>
@@ -58,6 +58,6 @@
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
-	<string>507756515938786</string>
+	<string>515369438565638</string>
 </dict>
 </plist>

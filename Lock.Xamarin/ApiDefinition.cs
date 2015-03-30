@@ -299,211 +299,201 @@ namespace Auth0
 		A0Strategy EnterpriseStrategyWithConnection (string connectionName);
 	}
 
-	partial interface Constants
+	[Static]
+	interface A0StrategyName 
 	{
 		// extern NSString *const A0StrategyNameGoogleOpenId;
-		[Field ("A0StrategyNameGoogleOpenId")]
-		NSString A0StrategyNameGoogleOpenId { get; }
+		[Field ("A0StrategyNameGoogleOpenId", "__Internal")]
+		NSString GoogleOpenId { get; }
 
 		// extern NSString *const A0StrategyNameGoogleApps;
-		[Field ("A0StrategyNameGoogleApps")]
-		NSString A0StrategyNameGoogleApps { get; }
+		[Field ("A0StrategyNameGoogleApps", "__Internal")]
+		NSString GoogleApps { get; }
 
 		// extern NSString *const A0StrategyNameGooglePlus;
-		[Field ("A0StrategyNameGooglePlus")]
-		NSString A0StrategyNameGooglePlus { get; }
+		[Field ("A0StrategyNameGooglePlus", "__Internal")]
+		NSString GooglePlus { get; }
 
 		// extern NSString *const A0StrategyNameFacebook;
-		[Field ("A0StrategyNameFacebook")]
-		NSString A0StrategyNameFacebook { get; }
+		[Field ("A0StrategyNameFacebook", "__Internal")]
+		NSString Facebook { get; }
 
 		// extern NSString *const A0StrategyNameWindowsLive;
-		[Field ("A0StrategyNameWindowsLive")]
-		NSString A0StrategyNameWindowsLive { get; }
+		[Field ("A0StrategyNameWindowsLive", "__Internal")]
+		NSString WindowsLive { get; }
 
 		// extern NSString *const A0StrategyNameLinkedin;
-		[Field ("A0StrategyNameLinkedin")]
-		NSString A0StrategyNameLinkedin { get; }
+		[Field ("A0StrategyNameLinkedin", "__Internal")]
+		NSString Linkedin { get; }
 
 		// extern NSString *const A0StrategyNameGithub;
-		[Field ("A0StrategyNameGithub")]
-		NSString A0StrategyNameGithub { get; }
+		[Field ("A0StrategyNameGithub", "__Internal")]
+		NSString Github { get; }
 
 		// extern NSString *const A0StrategyNamePaypal;
-		[Field ("A0StrategyNamePaypal")]
-		NSString A0StrategyNamePaypal { get; }
+		[Field ("A0StrategyNamePaypal", "__Internal")]
+		NSString Paypal { get; }
 
 		// extern NSString *const A0StrategyNameTwitter;
-		[Field ("A0StrategyNameTwitter")]
-		NSString A0StrategyNameTwitter { get; }
+		[Field ("A0StrategyNameTwitter", "__Internal")]
+		NSString Twitter { get; }
 
 		// extern NSString *const A0StrategyNameAmazon;
-		[Field ("A0StrategyNameAmazon")]
-		NSString A0StrategyNameAmazon { get; }
+		[Field ("A0StrategyNameAmazon", "__Internal")]
+		NSString Amazon { get; }
 
 		// extern NSString *const A0StrategyNameVK;
-		[Field ("A0StrategyNameVK")]
-		NSString A0StrategyNameVK { get; }
+		[Field ("A0StrategyNameVK", "__Internal")]
+		NSString VK { get; }
 
 		// extern NSString *const A0StrategyNameYandex;
-		[Field ("A0StrategyNameYandex")]
-		NSString A0StrategyNameYandex { get; }
+		[Field ("A0StrategyNameYandex", "__Internal")]
+		NSString Yandex { get; }
 
 		// extern NSString *const A0StrategyNameOffice365;
-		[Field ("A0StrategyNameOffice365")]
-		NSString A0StrategyNameOffice365 { get; }
+		[Field ("A0StrategyNameOffice365", "__Internal")]
+		NSString Office365 { get; }
 
 		// extern NSString *const A0StrategyNameWaad;
-		[Field ("A0StrategyNameWaad")]
-		NSString A0StrategyNameWaad { get; }
+		[Field ("A0StrategyNameWaad", "__Internal")]
+		NSString Waad { get; }
 
 		// extern NSString *const A0StrategyNameADFS;
-		[Field ("A0StrategyNameADFS")]
-		NSString A0StrategyNameADFS { get; }
+		[Field ("A0StrategyNameADFS", "__Internal")]
+		NSString ADFS { get; }
 
 		// extern NSString *const A0StrategyNameSAMLP;
-		[Field ("A0StrategyNameSAMLP")]
-		NSString A0StrategyNameSAMLP { get; }
+		[Field ("A0StrategyNameSAMLP", "__Internal")]
+		NSString SAMLP { get; }
 
 		// extern NSString *const A0StrategyNamePingFederate;
-		[Field ("A0StrategyNamePingFederate")]
-		NSString A0StrategyNamePingFederate { get; }
+		[Field ("A0StrategyNamePingFederate", "__Internal")]
+		NSString PingFederate { get; }
 
 		// extern NSString *const A0StrategyNameIP;
-		[Field ("A0StrategyNameIP")]
-		NSString A0StrategyNameIP { get; }
+		[Field ("A0StrategyNameIP", "__Internal")]
+		NSString IP { get; }
 
 		// extern NSString *const A0StrategyNameMSCRM;
-		[Field ("A0StrategyNameMSCRM")]
-		NSString A0StrategyNameMSCRM { get; }
+		[Field ("A0StrategyNameMSCRM", "__Internal")]
+		NSString MSCRM { get; }
 
 		// extern NSString *const A0StrategyNameActiveDirectory;
-		[Field ("A0StrategyNameActiveDirectory")]
-		NSString A0StrategyNameActiveDirectory { get; }
+		[Field ("A0StrategyNameActiveDirectory", "__Internal")]
+		NSString ActiveDirectory { get; }
 
 		// extern NSString *const A0StrategyNameCustom;
-		[Field ("A0StrategyNameCustom")]
-		NSString A0StrategyNameCustom { get; }
+		[Field ("A0StrategyNameCustom", "__Internal")]
+		NSString Custom { get; }
 
 		// extern NSString *const A0StrategyNameAuth0;
-		[Field ("A0StrategyNameAuth0")]
-		NSString A0StrategyNameAuth0 { get; }
+		[Field ("A0StrategyNameAuth0", "__Internal")]
+		NSString Auth0 { get; }
 
 		// extern NSString *const A0StrategyNameAuth0LDAP;
-		[Field ("A0StrategyNameAuth0LDAP")]
-		NSString A0StrategyNameAuth0LDAP { get; }
+		[Field ("A0StrategyNameAuth0LDAP", "__Internal")]
+		NSString Auth0LDAP { get; }
 
 		// extern NSString *const A0StrategyName37Signals;
-		[Field ("A0StrategyName37Signals")]
-		NSString A0StrategyName37Signals { get; }
+		[Field ("A0StrategyName37Signals", "__Internal")]
+		NSString thirtySevenSignals { get; }
 
 		// extern NSString *const A0StrategyNameBox;
-		[Field ("A0StrategyNameBox")]
-		NSString A0StrategyNameBox { get; }
+		[Field ("A0StrategyNameBox", "__Internal")]
+		NSString Box { get; }
 
 		// extern NSString *const A0StrategyNameSalesforce;
-		[Field ("A0StrategyNameSalesforce")]
-		NSString A0StrategyNameSalesforce { get; }
+		[Field ("A0StrategyNameSalesforce", "__Internal")]
+		NSString Salesforce { get; }
 
 		// extern NSString *const A0StrategyNameSalesforceSandbox;
-		[Field ("A0StrategyNameSalesforceSandbox")]
-		NSString A0StrategyNameSalesforceSandbox { get; }
+		[Field ("A0StrategyNameSalesforceSandbox", "__Internal")]
+		NSString SalesforceSandbox { get; }
 
 		// extern NSString *const A0StrategyNameFitbit;
-		[Field ("A0StrategyNameFitbit")]
-		NSString A0StrategyNameFitbit { get; }
+		[Field ("A0StrategyNameFitbit", "__Internal")]
+		NSString Fitbit { get; }
 
 		// extern NSString *const A0StrategyNameBaidu;
-		[Field ("A0StrategyNameBaidu")]
-		NSString A0StrategyNameBaidu { get; }
+		[Field ("A0StrategyNameBaidu", "__Internal")]
+		NSString Baidu { get; }
 
 		// extern NSString *const A0StrategyNameRenRen;
-		[Field ("A0StrategyNameRenRen")]
-		NSString A0StrategyNameRenRen { get; }
+		[Field ("A0StrategyNameRenRen", "__Internal")]
+		NSString RenRen { get; }
 
 		// extern NSString *const A0StrategyNameYahoo;
-		[Field ("A0StrategyNameYahoo")]
-		NSString A0StrategyNameYahoo { get; }
+		[Field ("A0StrategyNameYahoo", "__Internal")]
+		NSString Yahoo { get; }
 
 		// extern NSString *const A0StrategyNameAOL;
-		[Field ("A0StrategyNameAOL")]
-		NSString A0StrategyNameAOL { get; }
+		[Field ("A0StrategyNameAOL", "__Internal")]
+		NSString AOL { get; }
 
 		// extern NSString *const A0StrategyNameYammer;
-		[Field ("A0StrategyNameYammer")]
-		NSString A0StrategyNameYammer { get; }
+		[Field ("A0StrategyNameYammer", "__Internal")]
+		NSString Yammer { get; }
 
 		// extern NSString *const A0StrategyNameWordpress;
-		[Field ("A0StrategyNameWordpress")]
-		NSString A0StrategyNameWordpress { get; }
+		[Field ("A0StrategyNameWordpress", "__Internal")]
+		NSString Wordpress { get; }
 
 		// extern NSString *const A0StrategyNameDwolla;
-		[Field ("A0StrategyNameDwolla")]
-		NSString A0StrategyNameDwolla { get; }
+		[Field ("A0StrategyNameDwolla", "__Internal")]
+		NSString Dwolla { get; }
 
 		// extern NSString *const A0StrategyNameShopify;
-		[Field ("A0StrategyNameShopify")]
-		NSString A0StrategyNameShopify { get; }
+		[Field ("A0StrategyNameShopify", "__Internal")]
+		NSString Shopify { get; }
 
 		// extern NSString *const A0StrategyNameMiicard;
-		[Field ("A0StrategyNameMiicard")]
-		NSString A0StrategyNameMiicard { get; }
+		[Field ("A0StrategyNameMiicard", "__Internal")]
+		NSString Miicard { get; }
 
 		// extern NSString *const A0StrategyNameSoundcloud;
-		[Field ("A0StrategyNameSoundcloud")]
-		NSString A0StrategyNameSoundcloud { get; }
+		[Field ("A0StrategyNameSoundcloud", "__Internal")]
+		NSString Soundcloud { get; }
 
 		// extern NSString *const A0StrategyNameEBay;
-		[Field ("A0StrategyNameEBay")]
-		NSString A0StrategyNameEBay { get; }
+		[Field ("A0StrategyNameEBay", "__Internal")]
+		NSString EBay { get; }
 
 		// extern NSString *const A0StrategyNameEvernote;
-		[Field ("A0StrategyNameEvernote")]
-		NSString A0StrategyNameEvernote { get; }
+		[Field ("A0StrategyNameEvernote", "__Internal")]
+		NSString Evernote { get; }
 
 		// extern NSString *const A0StrategyNameEvernoteSandbox;
-		[Field ("A0StrategyNameEvernoteSandbox")]
-		NSString A0StrategyNameEvernoteSandbox { get; }
+		[Field ("A0StrategyNameEvernoteSandbox", "__Internal")]
+		NSString EvernoteSandbox { get; }
 
 		// extern NSString *const A0StrategyNameSharepoint;
-		[Field ("A0StrategyNameSharepoint")]
-		NSString A0StrategyNameSharepoint { get; }
+		[Field ("A0StrategyNameSharepoint", "__Internal")]
+		NSString Sharepoint { get; }
 
 		// extern NSString *const A0StrategyNameWeibo;
-		[Field ("A0StrategyNameWeibo")]
-		NSString A0StrategyNameWeibo { get; }
+		[Field ("A0StrategyNameWeibo", "__Internal")]
+		NSString Weibo { get; }
 
 		// extern NSString *const A0StrategyNameInstagram;
-		[Field ("A0StrategyNameInstagram")]
-		NSString A0StrategyNameInstagram { get; }
+		[Field ("A0StrategyNameInstagram", "__Internal")]
+		NSString Instagram { get; }
 
 		// extern NSString *const A0StrategyNameTheCity;
-		[Field ("A0StrategyNameTheCity")]
-		NSString A0StrategyNameTheCity { get; }
+		[Field ("A0StrategyNameTheCity", "__Internal")]
+		NSString TheCity { get; }
 
 		// extern NSString *const A0StrategyNameTheCitySandbox;
-		[Field ("A0StrategyNameTheCitySandbox")]
-		NSString A0StrategyNameTheCitySandbox { get; }
+		[Field ("A0StrategyNameTheCitySandbox", "__Internal")]
+		NSString TheCitySandbox { get; }
 
 		// extern NSString *const A0StrategyNamePlanningCenter;
-		[Field ("A0StrategyNamePlanningCenter")]
-		NSString A0StrategyNamePlanningCenter { get; }
+		[Field ("A0StrategyNamePlanningCenter", "__Internal")]
+		NSString PlanningCenter { get; }
 
 		// extern NSString *const A0StrategyNameSMS;
-		[Field ("A0StrategyNameSMS")]
-		NSString A0StrategyNameSMS { get; }
+		[Field ("A0StrategyNameSMS", "__Internal")]
+		NSString SMS { get; }
 
-		// extern NSString *const A0StrategySocialTokenParameter;
-		[Field ("A0StrategySocialTokenParameter")]
-		NSString A0StrategySocialTokenParameter { get; }
-
-		// extern NSString *const A0StrategySocialTokenSecretParameter;
-		[Field ("A0StrategySocialTokenSecretParameter")]
-		NSString A0StrategySocialTokenSecretParameter { get; }
-
-		// extern NSString *const A0StrategySocialUserIdParameter;
-		[Field ("A0StrategySocialUserIdParameter")]
-		NSString A0StrategySocialUserIdParameter { get; }
 	}
 
 	// @interface A0Strategy : NSObject
@@ -539,6 +529,19 @@ namespace Auth0
 		[Static]
 		[Export ("newDatabaseStrategyWithConnections:")]
 		A0Strategy NewDatabaseStrategyWithConnections (A0Connection[] connections);
+
+		// extern NSString *const A0StrategySocialTokenParameter;
+		[Field ("A0StrategySocialTokenParameter", "__Internal")]
+		NSString SocialTokenParameter { get; }
+
+		// extern NSString *const A0StrategySocialTokenSecretParameter;
+		[Field ("A0StrategySocialTokenSecretParameter", "__Internal")]
+		NSString SocialTokenSecretParameter { get; }
+
+		// extern NSString *const A0StrategySocialUserIdParameter;
+		[Field ("A0StrategySocialUserIdParameter", "__Internal")]
+		NSString SocialUserIdParameter { get; }
+
 	}
 
 	// @interface A0Connection : NSObject
@@ -558,17 +561,14 @@ namespace Auth0
 		IntPtr Constructor (NSDictionary JSON);
 	}
 
-	partial interface Constants
-	{
-		// extern NSString *const A0JSONResponseSerializerErrorDataKey;
-		[Field ("A0JSONResponseSerializerErrorDataKey")]
-		NSString A0JSONResponseSerializerErrorDataKey { get; }
-	}
-
 	// @interface A0Errors : NSObject
 	[BaseType (typeof(NSObject))]
 	interface A0Errors
 	{
+		// extern NSString *const A0JSONResponseSerializerErrorDataKey;
+		[Field ("A0JSONResponseSerializerErrorDataKey", "__Internal")]
+		NSString A0JSONResponseSerializerErrorDataKey { get; }
+
 		// +(NSError *)noConnectionNameFound;
 		[Static]
 		[Export ("noConnectionNameFound")]
@@ -905,70 +905,7 @@ namespace Auth0
 		[Export ("clearSessions")]
 		void ClearSessions ();
 	}
-
-	partial interface Constants
-	{
-		// extern NSString *const A0ParameterScope;
-		[Field ("A0ParameterScope")]
-		NSString A0ParameterScope { get; }
-
-		// extern NSString *const A0ParameterDevice;
-		[Field ("A0ParameterDevice")]
-		NSString A0ParameterDevice { get; }
-
-		// extern NSString *const A0ParameterProtocol;
-		[Field ("A0ParameterProtocol")]
-		NSString A0ParameterProtocol { get; }
-
-		// extern NSString *const A0ParameterState;
-		[Field ("A0ParameterState")]
-		NSString A0ParameterState { get; }
-
-		// extern NSString *const A0ParameterNonce;
-		[Field ("A0ParameterNonce")]
-		NSString A0ParameterNonce { get; }
-
-		// extern NSString *const A0ParameterOfflineMode;
-		[Field ("A0ParameterOfflineMode")]
-		NSString A0ParameterOfflineMode { get; }
-
-		// extern NSString *const A0ParameterConnectionScopes;
-		[Field ("A0ParameterConnectionScopes")]
-		NSString A0ParameterConnectionScopes { get; }
-
-		// extern NSString *const A0ParameterAccessToken;
-		[Field ("A0ParameterAccessToken")]
-		NSString A0ParameterAccessToken { get; }
-
-		// extern NSString *const A0ParameterMainAccessToken;
-		[Field ("A0ParameterMainAccessToken")]
-		NSString A0ParameterMainAccessToken { get; }
-
-		// extern NSString *const A0ParameterConnection;
-		[Field ("A0ParameterConnection")]
-		NSString A0ParameterConnection { get; }
-
-		// extern NSString *const A0ScopeOpenId;
-		[Field ("A0ScopeOpenId")]
-		NSString A0ScopeOpenId { get; }
-
-		// extern NSString *const A0ScopeOfflineAccess;
-		[Field ("A0ScopeOfflineAccess")]
-		NSString A0ScopeOfflineAccess { get; }
-
-		// extern NSString *const A0ScopeProfile;
-		[Field ("A0ScopeProfile")]
-		NSString A0ScopeProfile { get; }
-
-		// extern NSString *const A0ParameterAPIType;
-		[Field ("A0ParameterAPIType")]
-		NSString A0ParameterAPIType { get; }
-
-		// extern NSString *const A0ParameterTarget;
-		[Field ("A0ParameterTarget")]
-		NSString A0ParameterTarget { get; }
-	}
-
+		
 	// @interface A0AuthParameters : NSObject <NSCopying>
 	[BaseType (typeof(NSObject))]
 	interface A0AuthParameters : INSCopying
@@ -1110,165 +1047,49 @@ namespace Auth0
 		void LogOff ();
 	}
 
-	partial interface Constants
-	{
+	[Static]
+	interface A0LockNotification {
 		// extern NSString *const A0LockNotificationLoginSuccessful;
-		[Field ("A0LockNotificationLoginSuccessful")]
-		NSString A0LockNotificationLoginSuccessful { get; }
+		[Field ("A0LockNotificationLoginSuccessful", "__Internal")]
+		NSString LoginSuccessful { get; }
 
 		// extern NSString *const A0LockNotificationLoginFailed;
-		[Field ("A0LockNotificationLoginFailed")]
-		NSString A0LockNotificationLoginFailed { get; }
+		[Field ("A0LockNotificationLoginFailed", "__Internal")]
+		NSString LoginFailed { get; }
 
 		// extern NSString *const A0LockNotificationSignUpSuccessful;
-		[Field ("A0LockNotificationSignUpSuccessful")]
-		NSString A0LockNotificationSignUpSuccessful { get; }
+		[Field ("A0LockNotificationSignUpSuccessful", "__Internal")]
+		NSString SignUpSuccessful { get; }
 
 		// extern NSString *const A0LockNotificationSignUpFailed;
-		[Field ("A0LockNotificationSignUpFailed")]
-		NSString A0LockNotificationSignUpFailed { get; }
+		[Field ("A0LockNotificationSignUpFailed", "__Internal")]
+		NSString SignUpFailed { get; }
 
 		// extern NSString *const A0LockNotificationChangePasswordSuccessful;
-		[Field ("A0LockNotificationChangePasswordSuccessful")]
-		NSString A0LockNotificationChangePasswordSuccessful { get; }
+		[Field ("A0LockNotificationChangePasswordSuccessful", "__Internal")]
+		NSString ChangePasswordSuccessful { get; }
 
 		// extern NSString *const A0LockNotificationChangePasswordFailed;
-		[Field ("A0LockNotificationChangePasswordFailed")]
-		NSString A0LockNotificationChangePasswordFailed { get; }
+		[Field ("A0LockNotificationChangePasswordFailed", "__Internal")]
+		NSString ChangePasswordFailed { get; }
 
 		// extern NSString *const A0LockNotificationLockDismissed;
-		[Field ("A0LockNotificationLockDismissed")]
-		NSString A0LockNotificationLockDismissed { get; }
+		[Field ("A0LockNotificationLockDismissed", "__Internal")]
+		NSString LockDismissed { get; }
 
 		// extern NSString *const A0LockNotificationErrorParameterKey;
-		[Field ("A0LockNotificationErrorParameterKey")]
-		NSString A0LockNotificationErrorParameterKey { get; }
+		[Field ("A0LockNotificationErrorParameterKey", "__Internal")]
+		NSString ErrorParameterKey { get; }
 
 		// extern NSString *const A0LockNotificationEmailParameterKey;
-		[Field ("A0LockNotificationEmailParameterKey")]
-		NSString A0LockNotificationEmailParameterKey { get; }
+		[Field ("A0LockNotificationEmailParameterKey", "__Internal")]
+		NSString EmailParameterKey { get; }
 
 		// extern NSString *const A0LockNotificationConnectionParameterKey;
-		[Field ("A0LockNotificationConnectionParameterKey")]
-		NSString A0LockNotificationConnectionParameterKey { get; }
-
-		// extern NSString *const A0ThemePrimaryButtonNormalColor;
-		[Field ("A0ThemePrimaryButtonNormalColor")]
-		NSString A0ThemePrimaryButtonNormalColor { get; }
-
-		// extern NSString *const A0ThemePrimaryButtonHighlightedColor;
-		[Field ("A0ThemePrimaryButtonHighlightedColor")]
-		NSString A0ThemePrimaryButtonHighlightedColor { get; }
-
-		// extern NSString *const A0ThemePrimaryButtonNormalImageName;
-		[Field ("A0ThemePrimaryButtonNormalImageName")]
-		NSString A0ThemePrimaryButtonNormalImageName { get; }
-
-		// extern NSString *const A0ThemePrimaryButtonHighlightedImageName;
-		[Field ("A0ThemePrimaryButtonHighlightedImageName")]
-		NSString A0ThemePrimaryButtonHighlightedImageName { get; }
-
-		// extern NSString *const A0ThemePrimaryButtonFont;
-		[Field ("A0ThemePrimaryButtonFont")]
-		NSString A0ThemePrimaryButtonFont { get; }
-
-		// extern NSString *const A0ThemePrimaryButtonTextColor;
-		[Field ("A0ThemePrimaryButtonTextColor")]
-		NSString A0ThemePrimaryButtonTextColor { get; }
-
-		// extern NSString *const A0ThemeSecondaryButtonBackgroundColor;
-		[Field ("A0ThemeSecondaryButtonBackgroundColor")]
-		NSString A0ThemeSecondaryButtonBackgroundColor { get; }
-
-		// extern NSString *const A0ThemeSecondaryButtonNormalImageName;
-		[Field ("A0ThemeSecondaryButtonNormalImageName")]
-		NSString A0ThemeSecondaryButtonNormalImageName { get; }
-
-		// extern NSString *const A0ThemeSecondaryButtonHighlightedImageName;
-		[Field ("A0ThemeSecondaryButtonHighlightedImageName")]
-		NSString A0ThemeSecondaryButtonHighlightedImageName { get; }
-
-		// extern NSString *const A0ThemeSecondaryButtonFont;
-		[Field ("A0ThemeSecondaryButtonFont")]
-		NSString A0ThemeSecondaryButtonFont { get; }
-
-		// extern NSString *const A0ThemeSecondaryButtonTextColor;
-		[Field ("A0ThemeSecondaryButtonTextColor")]
-		NSString A0ThemeSecondaryButtonTextColor { get; }
-
-		// extern NSString *const A0ThemeTextFieldFont;
-		[Field ("A0ThemeTextFieldFont")]
-		NSString A0ThemeTextFieldFont { get; }
-
-		// extern NSString *const A0ThemeTextFieldTextColor;
-		[Field ("A0ThemeTextFieldTextColor")]
-		NSString A0ThemeTextFieldTextColor { get; }
-
-		// extern NSString *const A0ThemeTextFieldPlaceholderTextColor;
-		[Field ("A0ThemeTextFieldPlaceholderTextColor")]
-		NSString A0ThemeTextFieldPlaceholderTextColor { get; }
-
-		// extern NSString *const A0ThemeTextFieldIconColor;
-		[Field ("A0ThemeTextFieldIconColor")]
-		NSString A0ThemeTextFieldIconColor { get; }
-
-		// extern NSString *const A0ThemeTitleFont;
-		[Field ("A0ThemeTitleFont")]
-		NSString A0ThemeTitleFont { get; }
-
-		// extern NSString *const A0ThemeTitleTextColor;
-		[Field ("A0ThemeTitleTextColor")]
-		NSString A0ThemeTitleTextColor { get; }
-
-		// extern NSString *const A0ThemeDescriptionFont;
-		[Field ("A0ThemeDescriptionFont")]
-		NSString A0ThemeDescriptionFont { get; }
-
-		// extern NSString *const A0ThemeDescriptionTextColor;
-		[Field ("A0ThemeDescriptionTextColor")]
-		NSString A0ThemeDescriptionTextColor { get; }
-
-		// extern NSString *const A0ThemeScreenBackgroundColor;
-		[Field ("A0ThemeScreenBackgroundColor")]
-		NSString A0ThemeScreenBackgroundColor { get; }
-
-		// extern NSString *const A0ThemeScreenBackgroundImageName;
-		[Field ("A0ThemeScreenBackgroundImageName")]
-		NSString A0ThemeScreenBackgroundImageName { get; }
-
-		// extern NSString *const A0ThemeIconImageName;
-		[Field ("A0ThemeIconImageName")]
-		NSString A0ThemeIconImageName { get; }
-
-		// extern NSString *const A0ThemeIconBackgroundColor;
-		[Field ("A0ThemeIconBackgroundColor")]
-		NSString A0ThemeIconBackgroundColor { get; }
-
-		// extern NSString *const A0ThemeSeparatorTextFont;
-		[Field ("A0ThemeSeparatorTextFont")]
-		NSString A0ThemeSeparatorTextFont { get; }
-
-		// extern NSString *const A0ThemeSeparatorTextColor;
-		[Field ("A0ThemeSeparatorTextColor")]
-		NSString A0ThemeSeparatorTextColor { get; }
-
-		// extern NSString *const A0ThemeCredentialBoxBorderColor;
-		[Field ("A0ThemeCredentialBoxBorderColor")]
-		NSString A0ThemeCredentialBoxBorderColor { get; }
-
-		// extern NSString *const A0ThemeCredentialBoxSeparatorColor;
-		[Field ("A0ThemeCredentialBoxSeparatorColor")]
-		NSString A0ThemeCredentialBoxSeparatorColor { get; }
-
-		// extern NSString *const A0ThemeCredentialBoxBackgroundColor;
-		[Field ("A0ThemeCredentialBoxBackgroundColor")]
-		NSString A0ThemeCredentialBoxBackgroundColor { get; }
-
-		// extern NSString *const A0ThemeCloseButtonTintColor;
-		[Field ("A0ThemeCloseButtonTintColor")]
-		NSString A0ThemeCloseButtonTintColor { get; }
+		[Field ("A0LockNotificationConnectionParameterKey", "__Internal")]
+		NSString ConnectionParameterKey { get; }
 	}
-
+		
 	// @interface A0Theme : NSObject
 	[BaseType (typeof(NSObject))]
 	interface A0Theme
@@ -1345,6 +1166,123 @@ namespace Auth0
 		// -(void)registerDefaultTheme;
 		[Export ("registerDefaultTheme")]
 		void RegisterDefaultTheme ();
+
+		// extern NSString *const A0ThemePrimaryButtonNormalColor;
+		[Field ("A0ThemePrimaryButtonNormalColor", "__Internal")]
+		NSString PrimaryButtonNormalColor { get; }
+
+		// extern NSString *const A0ThemePrimaryButtonHighlightedColor;
+		[Field ("A0ThemePrimaryButtonHighlightedColor", "__Internal")]
+		NSString PrimaryButtonHighlightedColor { get; }
+
+		// extern NSString *const A0ThemePrimaryButtonNormalImageName;
+		[Field ("A0ThemePrimaryButtonNormalImageName", "__Internal")]
+		NSString PrimaryButtonNormalImageName { get; }
+
+		// extern NSString *const A0ThemePrimaryButtonHighlightedImageName;
+		[Field ("A0ThemePrimaryButtonHighlightedImageName", "__Internal")]
+		NSString PrimaryButtonHighlightedImageName { get; }
+
+		// extern NSString *const A0ThemePrimaryButtonFont;
+		[Field ("A0ThemePrimaryButtonFont", "__Internal")]
+		NSString PrimaryButtonFont { get; }
+
+		// extern NSString *const A0ThemePrimaryButtonTextColor;
+		[Field ("A0ThemePrimaryButtonTextColor", "__Internal")]
+		NSString PrimaryButtonTextColor { get; }
+
+		// extern NSString *const A0ThemeSecondaryButtonBackgroundColor;
+		[Field ("A0ThemeSecondaryButtonBackgroundColor", "__Internal")]
+		NSString SecondaryButtonBackgroundColor { get; }
+
+		// extern NSString *const A0ThemeSecondaryButtonNormalImageName;
+		[Field ("A0ThemeSecondaryButtonNormalImageName", "__Internal")]
+		NSString SecondaryButtonNormalImageName { get; }
+
+		// extern NSString *const A0ThemeSecondaryButtonHighlightedImageName;
+		[Field ("A0ThemeSecondaryButtonHighlightedImageName", "__Internal")]
+		NSString SecondaryButtonHighlightedImageName { get; }
+
+		// extern NSString *const A0ThemeSecondaryButtonFont;
+		[Field ("A0ThemeSecondaryButtonFont", "__Internal")]
+		NSString SecondaryButtonFont { get; }
+
+		// extern NSString *const A0ThemeSecondaryButtonTextColor;
+		[Field ("A0ThemeSecondaryButtonTextColor", "__Internal")]
+		NSString SecondaryButtonTextColor { get; }
+
+		// extern NSString *const A0ThemeTextFieldFont;
+		[Field ("A0ThemeTextFieldFont", "__Internal")]
+		NSString TextFieldFont { get; }
+
+		// extern NSString *const A0ThemeTextFieldTextColor;
+		[Field ("A0ThemeTextFieldTextColor", "__Internal")]
+		NSString TextFieldTextColor { get; }
+
+		// extern NSString *const A0ThemeTextFieldPlaceholderTextColor;
+		[Field ("A0ThemeTextFieldPlaceholderTextColor", "__Internal")]
+		NSString TextFieldPlaceholderTextColor { get; }
+
+		// extern NSString *const A0ThemeTextFieldIconColor;
+		[Field ("A0ThemeTextFieldIconColor", "__Internal")]
+		NSString TextFieldIconColor { get; }
+
+		// extern NSString *const A0ThemeTitleFont;
+		[Field ("A0ThemeTitleFont", "__Internal")]
+		NSString TitleFont { get; }
+
+		// extern NSString *const A0ThemeTitleTextColor;
+		[Field ("A0ThemeTitleTextColor", "__Internal")]
+		NSString TitleTextColor { get; }
+
+		// extern NSString *const A0ThemeDescriptionFont;
+		[Field ("A0ThemeDescriptionFont", "__Internal")]
+		NSString DescriptionFont { get; }
+
+		// extern NSString *const A0ThemeDescriptionTextColor;
+		[Field ("A0ThemeDescriptionTextColor", "__Internal")]
+		NSString DescriptionTextColor { get; }
+
+		// extern NSString *const A0ThemeScreenBackgroundColor;
+		[Field ("A0ThemeScreenBackgroundColor", "__Internal")]
+		NSString ScreenBackgroundColor { get; }
+
+		// extern NSString *const A0ThemeScreenBackgroundImageName;
+		[Field ("A0ThemeScreenBackgroundImageName", "__Internal")]
+		NSString ScreenBackgroundImageName { get; }
+
+		// extern NSString *const A0ThemeIconImageName;
+		[Field ("A0ThemeIconImageName", "__Internal")]
+		NSString IconImageName { get; }
+
+		// extern NSString *const A0ThemeIconBackgroundColor;
+		[Field ("A0ThemeIconBackgroundColor", "__Internal")]
+		NSString IconBackgroundColor { get; }
+
+		// extern NSString *const A0ThemeSeparatorTextFont;
+		[Field ("A0ThemeSeparatorTextFont", "__Internal")]
+		NSString SeparatorTextFont { get; }
+
+		// extern NSString *const A0ThemeSeparatorTextColor;
+		[Field ("A0ThemeSeparatorTextColor", "__Internal")]
+		NSString SeparatorTextColor { get; }
+
+		// extern NSString *const A0ThemeCredentialBoxBorderColor;
+		[Field ("A0ThemeCredentialBoxBorderColor", "__Internal")]
+		NSString CredentialBoxBorderColor { get; }
+
+		// extern NSString *const A0ThemeCredentialBoxSeparatorColor;
+		[Field ("A0ThemeCredentialBoxSeparatorColor", "__Internal")]
+		NSString CredentialBoxSeparatorColor { get; }
+
+		// extern NSString *const A0ThemeCredentialBoxBackgroundColor;
+		[Field ("A0ThemeCredentialBoxBackgroundColor", "__Internal")]
+		NSString CredentialBoxBackgroundColor { get; }
+
+		// extern NSString *const A0ThemeCloseButtonTintColor;
+		[Field ("A0ThemeCloseButtonTintColor", "__Internal")]
+		NSString CloseButtonTintColor { get; }
+
 	}
 
 	// @protocol A0KeyboardEnabledView <NSObject>
@@ -1363,10 +1301,33 @@ namespace Auth0
 		void HideKeyboard ();
 	}
 
+	// @interface A0TitleView : UIView
+	[BaseType (typeof(UIView))]
+	interface A0TitleView
+	{
+		
+	}
+
+	// @interface A0NavigationView : UIView
+	[BaseType (typeof(UIView))]
+	interface A0NavigationView
+	{
+
+	}
+
 	// @interface A0ContainerViewController : UIViewController
 	[BaseType (typeof(UIViewController))]
 	interface A0ContainerViewController
 	{
+
+		// @property (nonatomic, weak) A0TitleView * titleView;
+		[Export ("titleView", ArgumentSemantic.Weak)]
+		A0TitleView TitleView { get; set; }
+
+		// -(A0NavigationView *)navigationView;
+		[Export ("navigationView")]
+		A0NavigationView NavigationView { get; }
+
 		// -(void)displayController:(UIViewController<A0KeyboardEnabledView> *)controller;
 		[Export ("displayController:")]
 		void DisplayController (A0KeyboardEnabledView controller);
@@ -1485,7 +1446,36 @@ namespace Auth0
 		[Export ("newAuthenticatorWithKey:andSecret:")]
 		A0TwitterAuthenticator NewAuthenticatorWithKey (string key, string secret);
 	}
+
+	[BaseType (typeof(UIButton))]
+	interface A0ProgressButton
+	{
+	}
+
+	[BaseType (typeof(UIView))]
+	interface A0RoundedBoxView
+	{
 		
+	}
+
+	[BaseType (typeof(UIView))]
+	interface A0CredentialFieldView
+	{
+		
+	}
+
+	[BaseType (typeof(UIView))]
+	interface A0PasswordFieldView
+	{
+		
+	}
+
+	[BaseType (typeof(UICollectionView))]
+	interface A0SmallSocialAuthenticationCollectionView
+	{
+		
+	}
+	/*
 	partial interface Constants
 	{
 		// extern NSString *const A0ThemeTouchIDLockButtonImageNormalName;
@@ -1581,4 +1571,5 @@ namespace Auth0
 		[Export ("iconImage")]
 		UIImage IconImage { get; }
 	}
+	*/
 }
