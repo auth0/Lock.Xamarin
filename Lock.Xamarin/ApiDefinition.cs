@@ -4,8 +4,10 @@ using Foundation;
 using ObjCRuntime;
 using UIKit;
 
-namespace Auth0
+namespace Auth0.iOS
 {
+	//Core Start
+
 	// @protocol A0APIRouter <NSObject>
 	[Protocol, Model]
 	[BaseType (typeof(NSObject))]
@@ -560,186 +562,7 @@ namespace Auth0
 		[Export ("initWithJSONDictionary:")]
 		IntPtr Constructor (NSDictionary JSON);
 	}
-
-	// @interface A0Errors : NSObject
-	[BaseType (typeof(NSObject))]
-	interface A0Errors
-	{
-		// extern NSString *const A0JSONResponseSerializerErrorDataKey;
-		[Field ("A0JSONResponseSerializerErrorDataKey", "__Internal")]
-		NSString A0JSONResponseSerializerErrorDataKey { get; }
-
-		// +(NSError *)noConnectionNameFound;
-		[Static]
-		[Export ("noConnectionNameFound")]
-		NSError NoConnectionNameFound { get; }
-
-		// +(NSError *)notConnectedToInternetError;
-		[Static]
-		[Export ("notConnectedToInternetError")]
-		NSError NotConnectedToInternetError { get; }
-
-		// +(BOOL)isAuth0Error:(NSError *)error withCode:(A0ErrorCode)code;
-		[Static]
-		[Export ("isAuth0Error:withCode:")]
-		bool IsAuth0Error (NSError error, A0ErrorCode code);
-
-		// +(BOOL)isCancelledSocialAuthentication:(NSError *)error;
-		[Static]
-		[Export ("isCancelledSocialAuthentication:")]
-		bool IsCancelledSocialAuthentication (NSError error);
-
-		// +(NSError *)defaultLoginErrorFor:(NSError *)error;
-		[Static]
-		[Export ("defaultLoginErrorFor:")]
-		NSError DefaultLoginErrorFor (NSError error);
-
-		// +(NSError *)invalidLoginCredentialsUsingEmail:(BOOL)usesEmail;
-		[Static]
-		[Export ("invalidLoginCredentialsUsingEmail:")]
-		NSError InvalidLoginCredentialsUsingEmail (bool usesEmail);
-
-		// +(NSError *)invalidLoginUsernameUsingEmail:(BOOL)usesEmail;
-		[Static]
-		[Export ("invalidLoginUsernameUsingEmail:")]
-		NSError InvalidLoginUsernameUsingEmail (bool usesEmail);
-
-		// +(NSError *)invalidLoginPassword;
-		[Static]
-		[Export ("invalidLoginPassword")]
-		NSError InvalidLoginPassword { get; }
-
-		// +(NSError *)invalidSignUpCredentialsUsingEmail:(BOOL)usesEmail;
-		[Static]
-		[Export ("invalidSignUpCredentialsUsingEmail:")]
-		NSError InvalidSignUpCredentialsUsingEmail (bool usesEmail);
-
-		// +(NSError *)invalidSignUpUsernameUsingEmail:(BOOL)usesEmail;
-		[Static]
-		[Export ("invalidSignUpUsernameUsingEmail:")]
-		NSError InvalidSignUpUsernameUsingEmail (bool usesEmail);
-
-		// +(NSError *)invalidSignUpPassword;
-		[Static]
-		[Export ("invalidSignUpPassword")]
-		NSError InvalidSignUpPassword { get; }
-
-		// +(NSError *)invalidChangePasswordCredentialsUsingEmail:(BOOL)usesEmail;
-		[Static]
-		[Export ("invalidChangePasswordCredentialsUsingEmail:")]
-		NSError InvalidChangePasswordCredentialsUsingEmail (bool usesEmail);
-
-		// +(NSError *)invalidChangePasswordUsernameUsingEmail:(BOOL)usesEmail;
-		[Static]
-		[Export ("invalidChangePasswordUsernameUsingEmail:")]
-		NSError InvalidChangePasswordUsernameUsingEmail (bool usesEmail);
-
-		// +(NSError *)invalidChangePasswordPassword;
-		[Static]
-		[Export ("invalidChangePasswordPassword")]
-		NSError InvalidChangePasswordPassword { get; }
-
-		// +(NSError *)invalidChangePasswordRepeatPassword;
-		[Static]
-		[Export ("invalidChangePasswordRepeatPassword")]
-		NSError InvalidChangePasswordRepeatPassword { get; }
-
-		// +(NSError *)invalidChangePasswordRepeatPasswordAndPassword;
-		[Static]
-		[Export ("invalidChangePasswordRepeatPasswordAndPassword")]
-		NSError InvalidChangePasswordRepeatPasswordAndPassword { get; }
-
-		// +(NSError *)urlSchemeNotRegistered;
-		[Static]
-		[Export ("urlSchemeNotRegistered")]
-		NSError UrlSchemeNotRegistered { get; }
-
-		// +(NSError *)unkownProviderForStrategy:(NSString *)strategyName;
-		[Static]
-		[Export ("unkownProviderForStrategy:")]
-		NSError UnkownProviderForStrategy (string strategyName);
-
-		// +(NSError *)facebookCancelled;
-		[Static]
-		[Export ("facebookCancelled")]
-		NSError FacebookCancelled { get; }
-
-		// +(NSError *)twitterAppNotAuthorized;
-		[Static]
-		[Export ("twitterAppNotAuthorized")]
-		NSError TwitterAppNotAuthorized { get; }
-
-		// +(NSError *)twitterAppOauthNotAuthorized;
-		[Static]
-		[Export ("twitterAppOauthNotAuthorized")]
-		NSError TwitterAppOauthNotAuthorized { get; }
-
-		// +(NSError *)twitterCancelled;
-		[Static]
-		[Export ("twitterCancelled")]
-		NSError TwitterCancelled { get; }
-
-		// +(NSError *)twitterNotConfigured;
-		[Static]
-		[Export ("twitterNotConfigured")]
-		NSError TwitterNotConfigured { get; }
-
-		// +(NSError *)twitterInvalidAccount;
-		[Static]
-		[Export ("twitterInvalidAccount")]
-		NSError TwitterInvalidAccount { get; }
-
-		// +(NSError *)auth0CancelledForStrategy:(NSString *)strategyName;
-		[Static]
-		[Export ("auth0CancelledForStrategy:")]
-		NSError Auth0CancelledForStrategy (string strategyName);
-
-		// +(NSError *)auth0NotAuthorizedForStrategy:(NSString *)strategyName;
-		[Static]
-		[Export ("auth0NotAuthorizedForStrategy:")]
-		NSError Auth0NotAuthorizedForStrategy (string strategyName);
-
-		// +(NSError *)auth0InvalidConfigurationForStrategy:(NSString *)strategyName;
-		[Static]
-		[Export ("auth0InvalidConfigurationForStrategy:")]
-		NSError Auth0InvalidConfigurationForStrategy (string strategyName);
-
-		// +(NSError *)googleplusFailed;
-		[Static]
-		[Export ("googleplusFailed")]
-		NSError GoogleplusFailed { get; }
-
-		// +(NSError *)googleplusCancelled;
-		[Static]
-		[Export ("googleplusCancelled")]
-		NSError GoogleplusCancelled { get; }
-
-		// +(NSString *)localizedStringForSocialLoginError:(NSError *)error;
-		[Static]
-		[Export ("localizedStringForSocialLoginError:")]
-		string LocalizedStringForSocialLoginError (NSError error);
-
-		// +(NSString *)localizedStringForLoginError:(NSError *)error;
-		[Static]
-		[Export ("localizedStringForLoginError:")]
-		string LocalizedStringForLoginError (NSError error);
-
-		// +(NSString *)localizedStringForSMSLoginError:(NSError *)error;
-		[Static]
-		[Export ("localizedStringForSMSLoginError:")]
-		string LocalizedStringForSMSLoginError (NSError error);
-
-		// +(NSString *)localizedStringForSignUpError:(NSError *)error;
-		[Static]
-		[Export ("localizedStringForSignUpError:")]
-		string LocalizedStringForSignUpError (NSError error);
-
-		// +(NSString *)localizedStringForChangePasswordError:(NSError *)error;
-		[Static]
-		[Export ("localizedStringForChangePasswordError:")]
-		string LocalizedStringForChangePasswordError (NSError error);
-	}
-
+		
 	// @interface A0Token : NSObject
 	[BaseType (typeof(NSObject))]
 	interface A0Token
@@ -1047,6 +870,189 @@ namespace Auth0
 		void LogOff ();
 	}
 
+	//Core End
+
+	//UI Start
+
+	// @interface A0Errors : NSObject
+	[BaseType (typeof(NSObject))]
+	interface A0Errors
+	{
+		// extern NSString *const A0JSONResponseSerializerErrorDataKey;
+		[Field ("A0JSONResponseSerializerErrorDataKey", "__Internal")]
+		NSString A0JSONResponseSerializerErrorDataKey { get; }
+
+		// +(NSError *)noConnectionNameFound;
+		[Static]
+		[Export ("noConnectionNameFound")]
+		NSError NoConnectionNameFound { get; }
+
+		// +(NSError *)notConnectedToInternetError;
+		[Static]
+		[Export ("notConnectedToInternetError")]
+		NSError NotConnectedToInternetError { get; }
+
+		// +(BOOL)isAuth0Error:(NSError *)error withCode:(A0ErrorCode)code;
+		[Static]
+		[Export ("isAuth0Error:withCode:")]
+		bool IsAuth0Error (NSError error, A0ErrorCode code);
+
+		// +(BOOL)isCancelledSocialAuthentication:(NSError *)error;
+		[Static]
+		[Export ("isCancelledSocialAuthentication:")]
+		bool IsCancelledSocialAuthentication (NSError error);
+
+		// +(NSError *)defaultLoginErrorFor:(NSError *)error;
+		[Static]
+		[Export ("defaultLoginErrorFor:")]
+		NSError DefaultLoginErrorFor (NSError error);
+
+		// +(NSError *)invalidLoginCredentialsUsingEmail:(BOOL)usesEmail;
+		[Static]
+		[Export ("invalidLoginCredentialsUsingEmail:")]
+		NSError InvalidLoginCredentialsUsingEmail (bool usesEmail);
+
+		// +(NSError *)invalidLoginUsernameUsingEmail:(BOOL)usesEmail;
+		[Static]
+		[Export ("invalidLoginUsernameUsingEmail:")]
+		NSError InvalidLoginUsernameUsingEmail (bool usesEmail);
+
+		// +(NSError *)invalidLoginPassword;
+		[Static]
+		[Export ("invalidLoginPassword")]
+		NSError InvalidLoginPassword { get; }
+
+		// +(NSError *)invalidSignUpCredentialsUsingEmail:(BOOL)usesEmail;
+		[Static]
+		[Export ("invalidSignUpCredentialsUsingEmail:")]
+		NSError InvalidSignUpCredentialsUsingEmail (bool usesEmail);
+
+		// +(NSError *)invalidSignUpUsernameUsingEmail:(BOOL)usesEmail;
+		[Static]
+		[Export ("invalidSignUpUsernameUsingEmail:")]
+		NSError InvalidSignUpUsernameUsingEmail (bool usesEmail);
+
+		// +(NSError *)invalidSignUpPassword;
+		[Static]
+		[Export ("invalidSignUpPassword")]
+		NSError InvalidSignUpPassword { get; }
+
+		// +(NSError *)invalidChangePasswordCredentialsUsingEmail:(BOOL)usesEmail;
+		[Static]
+		[Export ("invalidChangePasswordCredentialsUsingEmail:")]
+		NSError InvalidChangePasswordCredentialsUsingEmail (bool usesEmail);
+
+		// +(NSError *)invalidChangePasswordUsernameUsingEmail:(BOOL)usesEmail;
+		[Static]
+		[Export ("invalidChangePasswordUsernameUsingEmail:")]
+		NSError InvalidChangePasswordUsernameUsingEmail (bool usesEmail);
+
+		// +(NSError *)invalidChangePasswordPassword;
+		[Static]
+		[Export ("invalidChangePasswordPassword")]
+		NSError InvalidChangePasswordPassword { get; }
+
+		// +(NSError *)invalidChangePasswordRepeatPassword;
+		[Static]
+		[Export ("invalidChangePasswordRepeatPassword")]
+		NSError InvalidChangePasswordRepeatPassword { get; }
+
+		// +(NSError *)invalidChangePasswordRepeatPasswordAndPassword;
+		[Static]
+		[Export ("invalidChangePasswordRepeatPasswordAndPassword")]
+		NSError InvalidChangePasswordRepeatPasswordAndPassword { get; }
+
+		// +(NSError *)urlSchemeNotRegistered;
+		[Static]
+		[Export ("urlSchemeNotRegistered")]
+		NSError UrlSchemeNotRegistered { get; }
+
+		// +(NSError *)unkownProviderForStrategy:(NSString *)strategyName;
+		[Static]
+		[Export ("unkownProviderForStrategy:")]
+		NSError UnkownProviderForStrategy (string strategyName);
+
+		// +(NSError *)facebookCancelled;
+		[Static]
+		[Export ("facebookCancelled")]
+		NSError FacebookCancelled { get; }
+
+		// +(NSError *)twitterAppNotAuthorized;
+		[Static]
+		[Export ("twitterAppNotAuthorized")]
+		NSError TwitterAppNotAuthorized { get; }
+
+		// +(NSError *)twitterAppOauthNotAuthorized;
+		[Static]
+		[Export ("twitterAppOauthNotAuthorized")]
+		NSError TwitterAppOauthNotAuthorized { get; }
+
+		// +(NSError *)twitterCancelled;
+		[Static]
+		[Export ("twitterCancelled")]
+		NSError TwitterCancelled { get; }
+
+		// +(NSError *)twitterNotConfigured;
+		[Static]
+		[Export ("twitterNotConfigured")]
+		NSError TwitterNotConfigured { get; }
+
+		// +(NSError *)twitterInvalidAccount;
+		[Static]
+		[Export ("twitterInvalidAccount")]
+		NSError TwitterInvalidAccount { get; }
+
+		// +(NSError *)auth0CancelledForStrategy:(NSString *)strategyName;
+		[Static]
+		[Export ("auth0CancelledForStrategy:")]
+		NSError Auth0CancelledForStrategy (string strategyName);
+
+		// +(NSError *)auth0NotAuthorizedForStrategy:(NSString *)strategyName;
+		[Static]
+		[Export ("auth0NotAuthorizedForStrategy:")]
+		NSError Auth0NotAuthorizedForStrategy (string strategyName);
+
+		// +(NSError *)auth0InvalidConfigurationForStrategy:(NSString *)strategyName;
+		[Static]
+		[Export ("auth0InvalidConfigurationForStrategy:")]
+		NSError Auth0InvalidConfigurationForStrategy (string strategyName);
+
+		// +(NSError *)googleplusFailed;
+		[Static]
+		[Export ("googleplusFailed")]
+		NSError GoogleplusFailed { get; }
+
+		// +(NSError *)googleplusCancelled;
+		[Static]
+		[Export ("googleplusCancelled")]
+		NSError GoogleplusCancelled { get; }
+
+		// +(NSString *)localizedStringForSocialLoginError:(NSError *)error;
+		[Static]
+		[Export ("localizedStringForSocialLoginError:")]
+		string LocalizedStringForSocialLoginError (NSError error);
+
+		// +(NSString *)localizedStringForLoginError:(NSError *)error;
+		[Static]
+		[Export ("localizedStringForLoginError:")]
+		string LocalizedStringForLoginError (NSError error);
+
+		// +(NSString *)localizedStringForSMSLoginError:(NSError *)error;
+		[Static]
+		[Export ("localizedStringForSMSLoginError:")]
+		string LocalizedStringForSMSLoginError (NSError error);
+
+		// +(NSString *)localizedStringForSignUpError:(NSError *)error;
+		[Static]
+		[Export ("localizedStringForSignUpError:")]
+		string LocalizedStringForSignUpError (NSError error);
+
+		// +(NSString *)localizedStringForChangePasswordError:(NSError *)error;
+		[Static]
+		[Export ("localizedStringForChangePasswordError:")]
+		string LocalizedStringForChangePasswordError (NSError error);
+	}
+
 	[Static]
 	interface A0LockNotification {
 		// extern NSString *const A0LockNotificationLoginSuccessful;
@@ -1315,6 +1321,35 @@ namespace Auth0
 
 	}
 
+	[BaseType (typeof(UIButton))]
+	interface A0ProgressButton
+	{
+	}
+
+	[BaseType (typeof(UIView))]
+	interface A0RoundedBoxView
+	{
+
+	}
+
+	[BaseType (typeof(UIView))]
+	interface A0CredentialFieldView
+	{
+
+	}
+
+	[BaseType (typeof(UIView))]
+	interface A0PasswordFieldView
+	{
+
+	}
+
+	[BaseType (typeof(UICollectionView))]
+	interface A0SmallSocialAuthenticationCollectionView
+	{
+
+	}
+
 	// @interface A0ContainerViewController : UIViewController
 	[BaseType (typeof(UIViewController))]
 	interface A0ContainerViewController
@@ -1336,7 +1371,7 @@ namespace Auth0
 		[Export ("displayController:layout:")]
 		void DisplayController (A0KeyboardEnabledView controller, A0ContainerLayoutVertical layout);
 	}
-
+		
 	// typedef void (^A0AuthenticationBlock)(A0UserProfile *A0Token *);
 	delegate void A0AuthenticationBlock (A0UserProfile profile, A0Token token);
 
@@ -1422,6 +1457,10 @@ namespace Auth0
 		string DefaultDatabaseConnectionName { get; set; }
 	}
 
+	//UI End
+
+	//Facebook Start
+
 	// @interface A0FacebookAuthenticator : NSObject <A0AuthenticationProvider>
 	[BaseType (typeof(NSObject))]
 	interface A0FacebookAuthenticator : IA0AuthenticationProvider
@@ -1437,6 +1476,10 @@ namespace Auth0
 		A0FacebookAuthenticator NewAuthenticatorWithDefaultPermissions ();
 	}
 
+	//Facebook End
+
+	//Twitter Start
+
 	// @interface A0TwitterAuthenticator : NSObject <A0AuthenticationProvider>
 	[BaseType (typeof(NSObject))]
 	interface A0TwitterAuthenticator : IA0AuthenticationProvider
@@ -1446,36 +1489,11 @@ namespace Auth0
 		[Export ("newAuthenticatorWithKey:andSecret:")]
 		A0TwitterAuthenticator NewAuthenticatorWithKey (string key, string secret);
 	}
+				
+	//Twitter End
 
-	[BaseType (typeof(UIButton))]
-	interface A0ProgressButton
-	{
-	}
+	//TouchID Start
 
-	[BaseType (typeof(UIView))]
-	interface A0RoundedBoxView
-	{
-		
-	}
-
-	[BaseType (typeof(UIView))]
-	interface A0CredentialFieldView
-	{
-		
-	}
-
-	[BaseType (typeof(UIView))]
-	interface A0PasswordFieldView
-	{
-		
-	}
-
-	[BaseType (typeof(UICollectionView))]
-	interface A0SmallSocialAuthenticationCollectionView
-	{
-		
-	}
-		
 	// @interface A0TouchIDLockViewController : UIViewController
 	[BaseType (typeof(UIViewController))]
 	interface A0TouchIDLockViewController
@@ -1509,6 +1527,10 @@ namespace Auth0
 		A0AuthParameters AuthenticationParameters { get; set; }
 	}
 
+	//TouchID End
+
+	//SMS Start 
+
 	// @interface A0SMSLockViewController : A0ContainerViewController
 	[BaseType (typeof(A0ContainerViewController))]
 	interface A0SMSLockViewController
@@ -1533,4 +1555,6 @@ namespace Auth0
 		[Export ("auth0APIToken", ArgumentSemantic.Copy)]
 		Func<NSString> Auth0APIToken { get; set; }
 	}
+
+	//SMS End
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 using Foundation;
 using UIKit;
-using Auth0;
+using Auth0.iOS;
 
 namespace Lock.Xamarin.Sample
 {
