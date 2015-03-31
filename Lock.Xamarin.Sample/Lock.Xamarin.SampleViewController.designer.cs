@@ -24,6 +24,14 @@ namespace Lock.Xamarin.Sample
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton ShowSMSButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton ShowTouchIDButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel WelcomeLabel { get; set; }
 
 		void ReleaseDesignerOutlets ()
@@ -35,6 +43,14 @@ namespace Lock.Xamarin.Sample
 			if (ShowLockButton != null) {
 				ShowLockButton.Dispose ();
 				ShowLockButton = null;
+			}
+			if (ShowSMSButton != null) {
+				ShowSMSButton.Dispose ();
+				ShowSMSButton = null;
+			}
+			if (ShowTouchIDButton != null) {
+				ShowTouchIDButton.Dispose ();
+				ShowTouchIDButton = null;
 			}
 			if (WelcomeLabel != null) {
 				WelcomeLabel.Dispose ();

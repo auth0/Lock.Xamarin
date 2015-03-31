@@ -17,13 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5" misplaced="YES">
-                                <rect key="frame" x="261" y="510" width="77" height="30"/>
-                                <state key="normal" title="Show Lock">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                                <rect key="frame" x="272" y="530" width="56" height="30"/>
+                                <state key="normal" title="Lock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JWT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYS-75-9wg" misplaced="YES">
                                 <rect key="frame" x="20" y="170" width="35" height="21"/>
@@ -35,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-CU-gQK" misplaced="YES">
-                                <rect key="frame" x="55" y="198" width="509" height="21"/>
+                                <rect key="frame" x="55" y="199" width="529" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -46,24 +44,44 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWc-eb-REd">
+                                <rect key="frame" x="16" y="530" width="56" height="30"/>
+                                <state key="normal" title="TouchID">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-5Q-zTl">
+                                <rect key="frame" x="528" y="530" width="56" height="30"/>
+                                <state key="normal" title="SMS">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="a0t-Ux-cbh" secondAttribute="centerX" constant="-0.5" id="117-AW-Mgd"/>
+                            <constraint firstItem="iWc-eb-REd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="4P8-Es-IVT"/>
+                            <constraint firstItem="5C6-5Q-zTl" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" id="GhZ-xH-alj"/>
                             <constraint firstItem="jYS-75-9wg" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="150" id="I0w-pI-pcb"/>
                             <constraint firstItem="jYS-75-9wg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="L9N-AB-pLe"/>
+                            <constraint firstItem="5C6-5Q-zTl" firstAttribute="width" secondItem="iWc-eb-REd" secondAttribute="width" id="M5z-4v-jvU"/>
+                            <constraint firstItem="5C6-5Q-zTl" firstAttribute="width" secondItem="5" secondAttribute="width" id="PR0-Wm-23G"/>
                             <constraint firstItem="t7r-CU-gQK" firstAttribute="top" secondItem="jYS-75-9wg" secondAttribute="bottom" constant="8" id="Qks-Ve-ysz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5C6-5Q-zTl" secondAttribute="trailing" id="YZh-Cx-tQK"/>
                             <constraint firstItem="t7r-CU-gQK" firstAttribute="leading" secondItem="jYS-75-9wg" secondAttribute="trailing" id="cH2-6A-YJh"/>
                             <constraint firstItem="a0t-Ux-cbh" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="64" id="cVy-RG-oBl"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="t7r-CU-gQK" secondAttribute="trailing" constant="20" id="cZE-zF-XMQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="t7r-CU-gQK" secondAttribute="trailing" id="cZE-zF-XMQ"/>
                             <constraint firstAttribute="centerX" secondItem="5" secondAttribute="centerX" id="cey-Ei-KHi"/>
-                            <constraint firstItem="4" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="60" id="pXv-hK-mqF"/>
+                            <constraint firstItem="5C6-5Q-zTl" firstAttribute="centerY" secondItem="iWc-eb-REd" secondAttribute="centerY" id="gY9-J3-mwn"/>
+                            <constraint firstItem="4" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="40" id="pXv-hK-mqF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="JWTLabel" destination="t7r-CU-gQK" id="name-outlet-t7r-CU-gQK"/>
                         <outlet property="ShowLockButton" destination="5" id="name-outlet-5"/>
                         <outlet property="WelcomeLabel" destination="a0t-Ux-cbh" id="name-outlet-a0t-Ux-cbh"/>
-                        <outlet property="JWTLabel" destination="t7r-CU-gQK" id="name-outlet-t7r-CU-gQK"/>
+                        <outlet property="ShowSMSButton" destination="5C6-5Q-zTl" id="name-outlet-5C6-5Q-zTl"/>
+                        <outlet property="ShowTouchIDButton" destination="iWc-eb-REd" id="name-outlet-iWc-eb-REd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

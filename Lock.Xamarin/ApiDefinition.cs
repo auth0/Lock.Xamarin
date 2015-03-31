@@ -210,10 +210,10 @@ namespace Auth0
 	}
 
 	// typedef void (^A0UserAPIClientUserProfileSuccess)(A0UserProfile *);
-	delegate void A0UserAPIClientUserProfileSuccess (A0UserProfile arg0);
+	delegate void A0UserAPIClientUserProfileSuccess (A0UserProfile profile);
 
 	// typedef void (^A0UserAPIClientError)(NSError *);
-	delegate void A0UserAPIClientError (NSError arg0);
+	delegate void A0UserAPIClientError (NSError error);
 
 	// @interface A0UserAPIClient : NSObject
 	[BaseType (typeof(NSObject))]
@@ -1169,119 +1169,119 @@ namespace Auth0
 
 		// extern NSString *const A0ThemePrimaryButtonNormalColor;
 		[Field ("A0ThemePrimaryButtonNormalColor", "__Internal")]
-		NSString PrimaryButtonNormalColor { get; }
+		NSString PrimaryButtonNormalColorKey { get; }
 
 		// extern NSString *const A0ThemePrimaryButtonHighlightedColor;
 		[Field ("A0ThemePrimaryButtonHighlightedColor", "__Internal")]
-		NSString PrimaryButtonHighlightedColor { get; }
+		NSString PrimaryButtonHighlightedColorKey { get; }
 
 		// extern NSString *const A0ThemePrimaryButtonNormalImageName;
 		[Field ("A0ThemePrimaryButtonNormalImageName", "__Internal")]
-		NSString PrimaryButtonNormalImageName { get; }
+		NSString PrimaryButtonNormalImageNameKey { get; }
 
 		// extern NSString *const A0ThemePrimaryButtonHighlightedImageName;
 		[Field ("A0ThemePrimaryButtonHighlightedImageName", "__Internal")]
-		NSString PrimaryButtonHighlightedImageName { get; }
+		NSString PrimaryButtonHighlightedImageNameKey { get; }
 
 		// extern NSString *const A0ThemePrimaryButtonFont;
 		[Field ("A0ThemePrimaryButtonFont", "__Internal")]
-		NSString PrimaryButtonFont { get; }
+		NSString PrimaryButtonFontKey { get; }
 
 		// extern NSString *const A0ThemePrimaryButtonTextColor;
 		[Field ("A0ThemePrimaryButtonTextColor", "__Internal")]
-		NSString PrimaryButtonTextColor { get; }
+		NSString PrimaryButtonTextColorKey { get; }
 
 		// extern NSString *const A0ThemeSecondaryButtonBackgroundColor;
 		[Field ("A0ThemeSecondaryButtonBackgroundColor", "__Internal")]
-		NSString SecondaryButtonBackgroundColor { get; }
+		NSString SecondaryButtonBackgroundColorKey { get; }
 
 		// extern NSString *const A0ThemeSecondaryButtonNormalImageName;
 		[Field ("A0ThemeSecondaryButtonNormalImageName", "__Internal")]
-		NSString SecondaryButtonNormalImageName { get; }
+		NSString SecondaryButtonNormalImageNameKey { get; }
 
 		// extern NSString *const A0ThemeSecondaryButtonHighlightedImageName;
 		[Field ("A0ThemeSecondaryButtonHighlightedImageName", "__Internal")]
-		NSString SecondaryButtonHighlightedImageName { get; }
+		NSString SecondaryButtonHighlightedImageNameKey { get; }
 
 		// extern NSString *const A0ThemeSecondaryButtonFont;
 		[Field ("A0ThemeSecondaryButtonFont", "__Internal")]
-		NSString SecondaryButtonFont { get; }
+		NSString SecondaryButtonFontKey { get; }
 
 		// extern NSString *const A0ThemeSecondaryButtonTextColor;
 		[Field ("A0ThemeSecondaryButtonTextColor", "__Internal")]
-		NSString SecondaryButtonTextColor { get; }
+		NSString SecondaryButtonTextColorKey { get; }
 
 		// extern NSString *const A0ThemeTextFieldFont;
 		[Field ("A0ThemeTextFieldFont", "__Internal")]
-		NSString TextFieldFont { get; }
+		NSString TextFieldFontKey { get; }
 
 		// extern NSString *const A0ThemeTextFieldTextColor;
 		[Field ("A0ThemeTextFieldTextColor", "__Internal")]
-		NSString TextFieldTextColor { get; }
+		NSString TextFieldTextColorKey { get; }
 
 		// extern NSString *const A0ThemeTextFieldPlaceholderTextColor;
 		[Field ("A0ThemeTextFieldPlaceholderTextColor", "__Internal")]
-		NSString TextFieldPlaceholderTextColor { get; }
+		NSString TextFieldPlaceholderTextColorKey { get; }
 
 		// extern NSString *const A0ThemeTextFieldIconColor;
 		[Field ("A0ThemeTextFieldIconColor", "__Internal")]
-		NSString TextFieldIconColor { get; }
+		NSString TextFieldIconColorKey { get; }
 
 		// extern NSString *const A0ThemeTitleFont;
 		[Field ("A0ThemeTitleFont", "__Internal")]
-		NSString TitleFont { get; }
+		NSString TitleFontKey { get; }
 
 		// extern NSString *const A0ThemeTitleTextColor;
 		[Field ("A0ThemeTitleTextColor", "__Internal")]
-		NSString TitleTextColor { get; }
+		NSString TitleTextColorKey { get; }
 
 		// extern NSString *const A0ThemeDescriptionFont;
 		[Field ("A0ThemeDescriptionFont", "__Internal")]
-		NSString DescriptionFont { get; }
+		NSString DescriptionFontKey { get; }
 
 		// extern NSString *const A0ThemeDescriptionTextColor;
 		[Field ("A0ThemeDescriptionTextColor", "__Internal")]
-		NSString DescriptionTextColor { get; }
+		NSString DescriptionTextColorKey { get; }
 
 		// extern NSString *const A0ThemeScreenBackgroundColor;
 		[Field ("A0ThemeScreenBackgroundColor", "__Internal")]
-		NSString ScreenBackgroundColor { get; }
+		NSString ScreenBackgroundColorKey { get; }
 
 		// extern NSString *const A0ThemeScreenBackgroundImageName;
 		[Field ("A0ThemeScreenBackgroundImageName", "__Internal")]
-		NSString ScreenBackgroundImageName { get; }
+		NSString ScreenBackgroundImageNameKey { get; }
 
 		// extern NSString *const A0ThemeIconImageName;
 		[Field ("A0ThemeIconImageName", "__Internal")]
-		NSString IconImageName { get; }
+		NSString IconImageNameKey { get; }
 
 		// extern NSString *const A0ThemeIconBackgroundColor;
 		[Field ("A0ThemeIconBackgroundColor", "__Internal")]
-		NSString IconBackgroundColor { get; }
+		NSString IconBackgroundColorKey { get; }
 
 		// extern NSString *const A0ThemeSeparatorTextFont;
 		[Field ("A0ThemeSeparatorTextFont", "__Internal")]
-		NSString SeparatorTextFont { get; }
+		NSString SeparatorTextFontKey { get; }
 
 		// extern NSString *const A0ThemeSeparatorTextColor;
 		[Field ("A0ThemeSeparatorTextColor", "__Internal")]
-		NSString SeparatorTextColor { get; }
+		NSString SeparatorTextColorKey { get; }
 
 		// extern NSString *const A0ThemeCredentialBoxBorderColor;
 		[Field ("A0ThemeCredentialBoxBorderColor", "__Internal")]
-		NSString CredentialBoxBorderColor { get; }
+		NSString CredentialBoxBorderColorKey { get; }
 
 		// extern NSString *const A0ThemeCredentialBoxSeparatorColor;
 		[Field ("A0ThemeCredentialBoxSeparatorColor", "__Internal")]
-		NSString CredentialBoxSeparatorColor { get; }
+		NSString CredentialBoxSeparatorColorKey { get; }
 
 		// extern NSString *const A0ThemeCredentialBoxBackgroundColor;
 		[Field ("A0ThemeCredentialBoxBackgroundColor", "__Internal")]
-		NSString CredentialBoxBackgroundColor { get; }
+		NSString CredentialBoxBackgroundColorKey { get; }
 
 		// extern NSString *const A0ThemeCloseButtonTintColor;
 		[Field ("A0ThemeCloseButtonTintColor", "__Internal")]
-		NSString CloseButtonTintColor { get; }
+		NSString CloseButtonTintColorKey { get; }
 
 	}
 
@@ -1338,7 +1338,7 @@ namespace Auth0
 	}
 
 	// typedef void (^A0AuthenticationBlock)(A0UserProfile *A0Token *);
-	delegate void A0AuthenticationBlock (A0UserProfile arg0, A0Token arg1);
+	delegate void A0AuthenticationBlock (A0UserProfile profile, A0Token token);
 
 	// @interface A0LockViewController : A0ContainerViewController
 	[BaseType (typeof(A0ContainerViewController))]
@@ -1475,33 +1475,30 @@ namespace Auth0
 	{
 		
 	}
-	/*
-	partial interface Constants
-	{
-		// extern NSString *const A0ThemeTouchIDLockButtonImageNormalName;
-		[Field ("A0ThemeTouchIDLockButtonImageNormalName")]
-		NSString A0ThemeTouchIDLockButtonImageNormalName { get; }
-
-		// extern NSString *const A0ThemeTouchIDLockButtonImageHighlightedName;
-		[Field ("A0ThemeTouchIDLockButtonImageHighlightedName")]
-		NSString A0ThemeTouchIDLockButtonImageHighlightedName { get; }
-
-		// extern NSString *const A0ThemeTouchIDLockContainerBackgroundColor;
-		[Field ("A0ThemeTouchIDLockContainerBackgroundColor")]
-		NSString A0ThemeTouchIDLockContainerBackgroundColor { get; }
-	}
-
+		
 	// @interface A0TouchIDLockViewController : UIViewController
 	[BaseType (typeof(UIViewController))]
 	interface A0TouchIDLockViewController
 	{
+		// extern NSString *const A0ThemeTouchIDLockButtonImageNormalName;
+		[Field ("A0ThemeTouchIDLockButtonImageNormalName", "__Internal")]
+		NSString ButtonImageNormalNameKey { get; }
+
+		// extern NSString *const A0ThemeTouchIDLockButtonImageHighlightedName;
+		[Field ("A0ThemeTouchIDLockButtonImageHighlightedName", "__Internal")]
+		NSString ButtonImageHighlightedNameKey { get; }
+
+		// extern NSString *const A0ThemeTouchIDLockContainerBackgroundColor;
+		[Field ("A0ThemeTouchIDLockContainerBackgroundColor", "__Internal")]
+		NSString ContainerBackgroundColorKey { get; }
+
 		// @property (assign, nonatomic) BOOL closable;
 		[Export ("closable")]
 		bool Closable { get; set; }
 
 		// @property (copy, nonatomic) void (^onAuthenticationBlock)(A0UserProfile *A0Token *);
 		[Export ("onAuthenticationBlock", ArgumentSemantic.Copy)]
-		Action<A0UserProfile, A0Token> OnAuthenticationBlock { get; set; }
+		A0AuthenticationBlock OnAuthenticationBlock { get; set; }
 
 		// @property (copy, nonatomic) void (^onUserDismissBlock)();
 		[Export ("onUserDismissBlock", ArgumentSemantic.Copy)]
@@ -1522,7 +1519,7 @@ namespace Auth0
 
 		// @property (copy, nonatomic) void (^onAuthenticationBlock)(A0UserProfile *A0Token *);
 		[Export ("onAuthenticationBlock", ArgumentSemantic.Copy)]
-		Action<A0UserProfile, A0Token> OnAuthenticationBlock { get; set; }
+		A0AuthenticationBlock OnAuthenticationBlock { get; set; }
 
 		// @property (copy, nonatomic) void (^onUserDismissBlock)();
 		[Export ("onUserDismissBlock", ArgumentSemantic.Copy)]
@@ -1536,40 +1533,4 @@ namespace Auth0
 		[Export ("auth0APIToken", ArgumentSemantic.Copy)]
 		Func<NSString> Auth0APIToken { get; set; }
 	}
-
-	// typedef void (^A0LoginInfoBlock)(NSString *NSString *);
-	delegate void A0LoginInfoBlock (string arg0, string arg1);
-
-	// @interface A0PasswordManager : NSObject
-	[BaseType (typeof(NSObject))]
-	interface A0PasswordManager
-	{
-		// @property (copy, nonatomic) NSString * loginURLString;
-		[Export ("loginURLString")]
-		string LoginURLString { get; set; }
-
-		// +(instancetype)sharedInstance;
-		[Static]
-		[Export ("sharedInstance")]
-		A0PasswordManager SharedInstance ();
-
-		// +(BOOL)hasPasswordManagerInstalled;
-		[Static]
-		[Export ("hasPasswordManagerInstalled")]
-		bool HasPasswordManagerInstalled { get; }
-
-		// -(void)fillLoginInformationForViewController:(UIViewController *)controller sender:(id)sender completion:(A0LoginInfoBlock)completion;
-		[Export ("fillLoginInformationForViewController:sender:completion:")]
-		void FillLoginInformationForViewController (UIViewController controller, NSObject sender, A0LoginInfoBlock completion);
-
-		// -(void)saveLoginInformationForUsername:(NSString *)username password:(NSString *)password loginInfo:(NSDictionary *)loginInfo controller:(UIViewController *)controller sender:(id)sender completion:(A0LoginInfoBlock)completion;
-		[Export ("saveLoginInformationForUsername:password:loginInfo:controller:sender:completion:")]
-		void SaveLoginInformationForUsername (string username, string password, NSDictionary loginInfo, UIViewController controller, NSObject sender, A0LoginInfoBlock completion);
-
-		// +(UIImage *)iconImage;
-		[Static]
-		[Export ("iconImage")]
-		UIImage IconImage { get; }
-	}
-	*/
 }
