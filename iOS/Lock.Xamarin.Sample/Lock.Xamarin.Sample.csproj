@@ -182,80 +182,11 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Resources\Auth0.bundle\" />
     <Folder Include="Resources\Auth0.SMS.bundle\" />
     <Folder Include="Resources\Auth0.TouchID.bundle\" />
+    <Folder Include="Resources\Auth0.bundle\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\Services.plist">
-      <Link>Resources\Auth0.bundle\Services.plist</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\close.png">
-      <Link>Resources\Auth0.bundle\close.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\close%402x.png">
-      <Link>Resources\Auth0.bundle\close%402x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\close%403x.png">
-      <Link>Resources\Auth0.bundle\close%403x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\lock.png">
-      <Link>Resources\Auth0.bundle\lock.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\lock%402x.png">
-      <Link>Resources\Auth0.bundle\lock%402x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\lock%403x.png">
-      <Link>Resources\Auth0.bundle\lock%403x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\mail.png">
-      <Link>Resources\Auth0.bundle\mail.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\mail%402x.png">
-      <Link>Resources\Auth0.bundle\mail%402x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\mail%403x.png">
-      <Link>Resources\Auth0.bundle\mail%403x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\people.png">
-      <Link>Resources\Auth0.bundle\people.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\people%402x.png">
-      <Link>Resources\Auth0.bundle\people%402x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\people%403x.png">
-      <Link>Resources\Auth0.bundle\people%403x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\person.png">
-      <Link>Resources\Auth0.bundle\person.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\person%402x.png">
-      <Link>Resources\Auth0.bundle\person%402x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\person%403x.png">
-      <Link>Resources\Auth0.bundle\person%403x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_highlighted.png">
-      <Link>Resources\Auth0.bundle\secondary_button_highlighted.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_highlighted%402x.png">
-      <Link>Resources\Auth0.bundle\secondary_button_highlighted%402x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_highlighted%403x.png">
-      <Link>Resources\Auth0.bundle\secondary_button_highlighted%403x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_normal.png">
-      <Link>Resources\Auth0.bundle\secondary_button_normal.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_normal%402x.png">
-      <Link>Resources\Auth0.bundle\secondary_button_normal%402x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\secondary_button_normal%403x.png">
-      <Link>Resources\Auth0.bundle\secondary_button_normal%403x.png</Link>
-    </BundleResource>
-    <BundleResource Include="..\..\..\..\Desktop\StaticPOC\Auth0.bundle\z-social.ttf">
-      <Link>Resources\Auth0.bundle\z-social.ttf</Link>
-    </BundleResource>
     <BundleResource Include="..\Lock.Xamarin\Auth0.SMS.bundle\CountryCodes.plist">
       <Link>Resources\Auth0.SMS.bundle\CountryCodes.plist</Link>
     </BundleResource>
@@ -285,6 +216,75 @@
     </BundleResource>
     <BundleResource Include="..\Lock.Xamarin\Auth0.TouchID.bundle\touchid_selected%403x.png">
       <Link>Resources\Auth0.TouchID.bundle\touchid_selected%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\Services.plist">
+      <Link>Resources\Auth0.bundle\Services.plist</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\close.png">
+      <Link>Resources\Auth0.bundle\close.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\close%402x.png">
+      <Link>Resources\Auth0.bundle\close%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\close%403x.png">
+      <Link>Resources\Auth0.bundle\close%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\lock.png">
+      <Link>Resources\Auth0.bundle\lock.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\lock%402x.png">
+      <Link>Resources\Auth0.bundle\lock%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\lock%403x.png">
+      <Link>Resources\Auth0.bundle\lock%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\mail.png">
+      <Link>Resources\Auth0.bundle\mail.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\mail%402x.png">
+      <Link>Resources\Auth0.bundle\mail%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\mail%403x.png">
+      <Link>Resources\Auth0.bundle\mail%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\people.png">
+      <Link>Resources\Auth0.bundle\people.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\people%402x.png">
+      <Link>Resources\Auth0.bundle\people%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\people%403x.png">
+      <Link>Resources\Auth0.bundle\people%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\person.png">
+      <Link>Resources\Auth0.bundle\person.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\person%402x.png">
+      <Link>Resources\Auth0.bundle\person%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\person%403x.png">
+      <Link>Resources\Auth0.bundle\person%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\secondary_button_highlighted.png">
+      <Link>Resources\Auth0.bundle\secondary_button_highlighted.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\secondary_button_highlighted%402x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_highlighted%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\secondary_button_highlighted%403x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_highlighted%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\secondary_button_normal.png">
+      <Link>Resources\Auth0.bundle\secondary_button_normal.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\secondary_button_normal%402x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_normal%402x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\secondary_button_normal%403x.png">
+      <Link>Resources\Auth0.bundle\secondary_button_normal%403x.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Lock.Xamarin\Auth0.bundle\z-social.ttf">
+      <Link>Resources\Auth0.bundle\z-social.ttf</Link>
     </BundleResource>
   </ItemGroup>
   <ItemGroup>
