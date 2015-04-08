@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">Lock.Sample</string>
+	<string name="auth0_client_id">U5MhUrbyQHSVWjlEqZSTCBUFABLbJAS3</string>
+	<string name="auth0_tenant_name">overmind</string>
+	<string name="auth0_scheme">a0u5mhurbyqhsvwjleqzstcbufablbjas3</string>
+	<string name="auth0_callback_domain">overmind</string>
+</resources>
