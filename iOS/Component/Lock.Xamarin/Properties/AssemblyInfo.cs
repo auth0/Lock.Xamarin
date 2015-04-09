@@ -13,11 +13,11 @@ using Foundation;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle ("Lock.Xamarin")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyDescription ("A iOS framework to authenticate using Auth0 and with a Native Look & Feel")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
-[assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("hernan")]
+[assembly: AssemblyCompany ("Auht0")]
+[assembly: AssemblyProduct ("Auht0 Lock")]
+[assembly: AssemblyCopyright ("Copyright (c) 2014 Auth0 (http://auth0.com)")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 

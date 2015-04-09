@@ -113,7 +113,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Lock.Xamarin\Lock.Xamarin.iOS.csproj">
+    <ProjectReference Include="..\..\Component\Lock.Xamarin\Lock.Xamarin.iOS.csproj">
       <Project>{C6DC6098-43E5-4E00-984A-C6095FE07BFA}</Project>
       <Name>Lock.Xamarin.iOS</Name>
     </ProjectReference>
