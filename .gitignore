@@ -5,6 +5,7 @@ Resource.designer.cs
 bin
 obj
 *.a
+*.nib
 
 *.pidb
 *.userprefs

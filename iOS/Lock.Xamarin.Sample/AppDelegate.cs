@@ -25,7 +25,7 @@ namespace Lock.Xamarin.Sample
 			var authenticator = A0IdentityProviderAuthenticator.SharedInstance;
 			var facebook = A0FacebookAuthenticator.NewAuthenticatorWithDefaultPermissions ();
 			authenticator.RegisterAuthenticationProviders (new [] { facebook });
-			A0LockLogger.LogAll ();
+//			A0LockLogger.LogAll ();
 		}
 
 
