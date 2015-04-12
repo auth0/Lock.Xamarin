@@ -1,0 +1,82 @@
+require 'cocoapods-core'
+require 'fileutils'
+require 'zip'
+
+json_spec = 'Lock.json'
+version = '1.10.5'
+output_dir = "Lock-#{version}"
+
+class ZipFileGenerator
+  # Initialize with the directory to zip and the location of the output archive.
+  def initialize(inputDir, outputFile)
+    @inputDir = inputDir
+    @outputFile = outputFile
+  end
+  # Zip the input directory.
+  def write()
+    entries = Dir.entries(@inputDir).delete_if {|entry| ['.', '..', 'bin', 'obj', '.DS_Store'].include? entry }
+    io = Zip::File.open(@outputFile, Zip::File::CREATE);
+    writeEntries(entries, "", io)
+    io.close();
+  end
+  # A helper method to make the recursion work.
+  private
+  def writeEntries(entries, path, io)
+    entries.each do |e|
+      zipFilePath = path == "" ? e : File.join(path, e)
+      diskFilePath = File.join(@inputDir, zipFilePath)
+      puts "Deflating " + diskFilePath
+      if File.directory?(diskFilePath)
+        io.mkdir(zipFilePath)
+        subdir = Dir.entries(diskFilePath).delete_if {|entry| ['.', '..', '.DS_Store'].include? entry }
+        writeEntries(subdir, zipFilePath, io)
+      else
+        io.get_output_stream(zipFilePath) { |f| f.print(File.open(diskFilePath, "rb").read())}
+      end
+    end
+  end
+end
+
+desc 'Fetch & Update podspec json'
+task :podspec do
+  podspec = 'Lock.podspec'
+  sh "wget -q https://raw.githubusercontent.com/auth0/Lock.iOS-OSX/1.10.5/Lock.podspec -O #{podspec}" do |ok, status|
+    spec = Pod::Specification.from_file podspec
+    spec.platform = "ios", "7.0"
+    File.open(json_spec, 'w') {|f| f << spec.to_json}
+  end
+end
+
+desc 'assemble libLock.a'
+file 'Lock.Xamarin/libLock.a' => :podspec do
+  sh "pod package #{json_spec} --force --library --subspecs=Core,UI,Facebook,Twitter,SMS,TouchID" do |ok, status|
+    if ok
+      FileUtils.cp("#{output_dir}/ios/libLock.a", 'Lock.Xamarin/')
+    end
+  end
+
+end
+
+desc 'compile Nibs from Xibs'
+task :compile_nibs => 'Lock.Xamarin/libLock.a' do
+  xibs = Dir.glob "Xibs/**/*.xib"
+  xibs.each do |xib|
+    nib = "Lock.Xamarin/Nibs/#{File.basename(xib, ".xib")}.nib"
+    sh "ibtool --compile #{nib} #{xib}"
+  end
+end
+
+desc 'Zip Lock.Xamarin'
+task :zip => :compile_nibs do
+  FileUtils.rm 'Lock.Xamarin.zip', force: true
+  zipper = ZipFileGenerator.new('Lock.Xamarin', 'Lock.Xamarin.zip')
+  zipper.write()
+end
+
+desc 'Clean Lock iOS lib & nibs'
+task :clean do
+  FileUtils.rm 'Lock.Xamarin/libLock.a', force: true
+  FileUtils.rm Dir.glob('Lock.Xamarin/Nibs/*.nib')
+end
+
+task :default => :compile_nibs

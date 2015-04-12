@@ -4,8 +4,6 @@ Resource.designer.cs
 
 bin
 obj
-*.a
-*.nib
 
 *.pidb
 *.userprefs
@@ -15,5 +13,11 @@ obj
 *.suo
 *.user
 *.pfx
+*.a
 
 *_ReSharper.*/
+
+/iOS/Component/Lock-*/
+Lock.Xamarin.zip
+Lock.podspec
+Lock.json
