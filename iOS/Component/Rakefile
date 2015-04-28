@@ -3,7 +3,7 @@ require 'fileutils'
 require 'zip'
 
 json_spec = 'Lock.json'
-version = '1.10.5'
+version = '1.11.0'
 output_dir = "Lock-#{version}"
 
 class ZipFileGenerator
@@ -40,7 +40,7 @@ end
 desc 'Fetch & Update podspec json'
 task :podspec do
   podspec = 'Lock.podspec'
-  sh "wget -q https://raw.githubusercontent.com/auth0/Lock.iOS-OSX/1.10.5/Lock.podspec -O #{podspec}" do |ok, status|
+  sh "wget -q https://raw.githubusercontent.com/auth0/Lock.iOS-OSX/#{version}/Lock.podspec -O #{podspec}" do |ok, status|
     spec = Pod::Specification.from_file podspec
     spec.platform = "ios", "7.0"
     File.open(json_spec, 'w') {|f| f << spec.to_json}
